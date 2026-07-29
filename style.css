@@ -1,0 +1,441 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+.navbar{
+    background:#0d6efd;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+}
+
+.menu a:hover{
+    color:yellow;
+}
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:24px;
+    margin-bottom:40px;
+}
+
+button{
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:18px 45px;
+    font-size:20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:black;
+    transform:scale(1.05);
+}
+.about{
+    padding:80px 10%;
+    text-align:center;
+    background:#ffffff;
+}
+
+.about h2{
+    font-size:40px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.about p{
+    font-size:22px;
+    line-height:1.8;
+    color:#444;
+    max-width:900px;
+    margin:auto;
+}
+.services{
+    padding:80px 10%;
+    background:#f5f7fa;
+    text-align:center;
+}
+
+.services h2{
+    font-size:42px;
+    color:#0d6efd;
+    margin-bottom:50px;
+}
+
+.service-box{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.7;
+}
+.price{
+    padding:80px 10%;
+    background:white;
+    text-align:center;
+}
+
+.price h2{
+    color:#0d6efd;
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+th{
+    background:#0d6efd;
+    color:white;
+    padding:18px;
+}
+
+td{
+    padding:18px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f5f5f5;
+}
+.gallery{
+    padding:80px 10%;
+    background:#f8f9fa;
+    text-align:center;
+}
+
+.gallery h2{
+    font-size:42px;
+    color:#0d6efd;
+    margin-bottom:40px;
+}
+
+.gallery-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery-box img{
+    width:100%;
+    border-radius:12px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.gallery-box img:hover{
+    transform:scale(1.05);
+}
+.contact{
+    padding:80px 10%;
+    background:#ffffff;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:42px;
+    color:#0d6efd;
+    margin-bottom:30px;
+}
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:#f8f9fa;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.contact-box h3{
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.contact-box p{
+    font-size:20px;
+    margin:15px 0;
+}
+
+.contact button{
+    margin-top:25px;
+    background:#25D366;
+    color:white;
+    padding:15px 35px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.contact button:hover{
+    background:#128C7E;
+}
+html{
+    scroll-behavior: smooth;
+}
+footer{
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background: #0d6efd;
+    color: white;
+}
+footer p{
+    margin: 5px 0;
+    font-size: 16px;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .menu{
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .hero h1{
+        font-size: 40px;
+    }
+
+    .hero p{
+        font-size: 20px;
+    }
+
+    .service-box{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box{
+        width:90%;
+    }
+
+    table{
+        width:100%;
+        font-size:14px;
+    }
+}
+.navbar{
+    position: sticky;
+    top:0;
+    z-index:1000;
+}
+.hero{
+    background:
+        linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+        url("images/cyber.jpg");
+
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+<a href="https://wa.me/916397576869" class="whatsapp">
+    💬
+</a>
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+}
+.gallery img{
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+.card{
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+<iframe
+src="YOUR_GOOGLE_MAP_LINK"
+width="100%"
+height="350"
+style="border:0;"
+loading="lazy">
+</iframe>
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Message"></textarea>
+
+<button>Send</button>
+
+</form>
+#darkMode{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:white;
+    color:black;
+    font-size:18px;
+}
+
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark section{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark .card,
+.dark .contact-box{
+    background:#2b2b2b;
+    color:white;
+}
+#darkMode{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#topBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    display:none;
+    padding:15px;
+    border:none;
+    border-radius:50%;
+    background:#0d6efd;
+    color:white;
+    cursor:pointer;
+}
+
+.dark{
+    background:#121212;
+    color:white;
+}
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark .navbar{
+    background:#111;
+}
+
+.dark .hero,
+.dark .about,
+.dark #services,
+.dark #price,
+.dark #gallery,
+.dark #contact{
+    background:#181818;
+}
+
+.dark .card,
+.dark .contact-box{
+    background:#222;
+    color:white;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p,
+.dark td,
+.dark th{
+    color:white;
+}
+
+.dark footer{
+    background:#111;
+}
